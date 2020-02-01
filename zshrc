@@ -8,3 +8,7 @@ GIT_PS1_SHOWCOLORHINTS=true
 PROMPT='%F{green}%2~%f → '
 RPROMPT='%F{244}$(__git_ps1 "%s")%f'
 
+LSCOLORS=ExFxBxDxCxegedabagacad
+
+alias ls='ls -G'
+

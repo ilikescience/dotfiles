@@ -1,0 +1,14 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.zshrc: zshrc
+    ~/.git-prompt.sh: git-prompt.sh
+    ~/.hushlogin: hushlogin
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

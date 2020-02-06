@@ -1,6 +1,10 @@
 source ~/.git-prompt.sh
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
+zstyle ':completion:*:*:git:*' script ~/.zsh/.git-completion.bash
+fpath=(~/.zsh $fpath)
+autoload -Uz compinit && compinit
+
 setopt PROMPT_SUBST;
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
